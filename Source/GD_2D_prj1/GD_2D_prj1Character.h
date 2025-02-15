@@ -59,9 +59,10 @@ protected:
 	// End of APawn interface
 
 	//player stamina control
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="PlayerAttributes|Stamina")
 	int Stamina;
-	UPROPERTY(EditAnywhere)
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "PlayerAttributes|Stamina")
 	int MaxStamina;
 
 
