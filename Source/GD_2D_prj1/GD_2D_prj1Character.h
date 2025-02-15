@@ -58,6 +58,13 @@ protected:
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 	// End of APawn interface
 
+	//player stamina control
+	UPROPERTY(VisibleAnywhere)
+	int Stamina;
+	UPROPERTY(EditAnywhere)
+	int MaxStamina;
+
+
 public:
 	AGD_2D_prj1Character();
 
